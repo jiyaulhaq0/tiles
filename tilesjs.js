@@ -14,7 +14,7 @@
     // Creating Our XMLHttpRequest object
     let xhr = new XMLHttpRequest();
     // Making our connection
-    var url = 'https://myapp-responsive-wombat-md.cfapps.us10-001.hana.ondemand.com/getuserworkflow/10';
+    var url = 'https://apisalesdemo2.successfactors.eu/odata/v2/User('+custUserId+')';
     xhr.open("GET", url, true);
     // function execute after request is successful
     xhr.onreadystatechange = function () {
@@ -22,7 +22,7 @@
             console.log(this.responseText);
             wfNumber = this.responseText
             urlRes = "Number of Pending workflow: "+ wfNumber;
-            content.innerHTML +='<a href=https://stackoverflow.com/questions/47215075/how-can-i-use-innerhtml-to-create-a-clickable-link-based-on-users-input>'+ urlRes+ '</a>';
+            content.innerHTML +='<a href=>'+ urlRes+ '</a>';
 
  
 
