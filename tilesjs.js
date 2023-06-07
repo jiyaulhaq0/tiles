@@ -28,10 +28,3 @@ xhttp.send();
 
 
 
-
-
-
-
-var localData = decodeURIComponent(localStorage.getItem("PPmcart"))
-var localJsonData = JSON.parse(localData);
-var items = localJsonData.value.items;
